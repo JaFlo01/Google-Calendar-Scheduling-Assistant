@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <link rel="icon" href="/public/images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="info">
+        <img id="logo" src="/public/images/logo.png" alt="Logo" />
+        <h1>Scheduling Assistant</h1>
+        <p>
+          Welcome to the Scheduling Assistant chatbot! This bot helps you
+          schedule events directly into your Google Calendar. You can start the
+          session by greeting the chatbot or directly ask it to schedule an
+          event.
+        </p>
+      </div>
+      <div id="chatbox">
+        <div id="messages"></div>
+        <div id="input">
+          <textarea
+            id="message"
+            rows="2"
+            placeholder="Type a message..."
+          ></textarea>
+          <button id="send">Send</button>
+        </div>
+      </div>
+    </div>
+    <script src="/public/script.js"></script>
+  </body>
+</html>
